@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.smart.travel.service.travel.mapper.StrategyMapper">
+  <resultMap id="BaseResultMap" type="com.smart.travel.service.travel.entity.Strategy">
+    <!--@mbg.generated-->
+    <!--@Table strategy-->
+    <id column="strategy_id" jdbcType="BIGINT" property="strategyId" />
+    <result column="user_id" jdbcType="BIGINT" property="userId" />
+    <result column="scenic_spot_id" jdbcType="BIGINT" property="scenicSpotId" />
+    <result column="main_title" jdbcType="VARCHAR" property="mainTitle" />
+    <result column="main_content" jdbcType="VARCHAR" property="mainContent" />
+    <result column="cover" jdbcType="VARCHAR" property="cover" />
+    <result column="subhead_first" jdbcType="VARCHAR" property="subheadFirst" />
+    <result column="content_first" jdbcType="VARCHAR" property="contentFirst" />
+    <result column="images_first" jdbcType="VARCHAR" property="imagesFirst" />
+    <result column="subhead_second" jdbcType="VARCHAR" property="subheadSecond" />
+    <result column="content_second" jdbcType="VARCHAR" property="contentSecond" />
+    <result column="images_second" jdbcType="VARCHAR" property="imagesSecond" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="creator_id" jdbcType="BIGINT" property="creatorId" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="modifier_id" jdbcType="BIGINT" property="modifierId" />
+    <result column="modifier_time" jdbcType="TIMESTAMP" property="modifierTime" />
+    <result column="is_delete" jdbcType="INTEGER" property="isDelete" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    strategy_id, user_id, scenic_spot_id, main_title, main_content, cover, subhead_first, 
+    content_first, images_first, subhead_second, content_second, images_second, `status`, 
+    creator_id, create_time, modifier_id, modifier_time, is_delete
+  </sql>
+    <resultMap id="ThreeResultMap" type="com.smart.travel.service.travel.entity.Strategy">
+        <id column="strategy_id" jdbcType="BIGINT" property="strategyId" />
+        <result column="s_user_id" jdbcType="BIGINT" property="userId" />
+        <result column="scenic_spot_id" jdbcType="BIGINT" property="scenicSpotId" />
+        <result column="main_title" jdbcType="VARCHAR" property="mainTitle" />
+        <result column="main_content" jdbcType="VARCHAR" property="mainContent" />
+        <result column="cover" jdbcType="VARCHAR" property="cover" />
+        <result column="subhead_first" jdbcType="VARCHAR" property="subheadFirst" />
+        <result column="content_first" jdbcType="VARCHAR" property="contentFirst" />
+        <result column="images_first" jdbcType="VARCHAR" property="imagesFirst" />
+        <result column="subhead_second" jdbcType="VARCHAR" property="subheadSecond" />
+        <result column="content_second" jdbcType="VARCHAR" property="contentSecond" />
+        <result column="images_second" jdbcType="VARCHAR" property="imagesSecond" />
+        <result column="status" jdbcType="INTEGER" property="status" />
+        <result column="creator_id" jdbcType="BIGINT" property="creatorId" />
+        <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+        <result column="modifier_id" jdbcType="BIGINT" property="modifierId" />
+        <result column="modifier_time" jdbcType="TIMESTAMP" property="modifierTime" />
+        <result column="is_delete" jdbcType="INTEGER" property="isDelete" />
+    </resultMap>
+</mapper>

@@ -1,0 +1,7 @@
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  redis:
+    database: 1
+    host: 47.107.114.69
+    port: 6379

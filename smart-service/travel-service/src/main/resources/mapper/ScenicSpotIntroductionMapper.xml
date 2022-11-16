@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.smart.travel.service.travel.mapper.ScenicSpotIntroductionMapper">
+  <resultMap id="BaseResultMap" type="com.smart.travel.service.travel.entity.ScenicSpotIntroduction">
+    <!--@mbg.generated-->
+    <!--@Table scenic_spot_introduction-->
+    <id column="scenic_spot_introduction_id" jdbcType="BIGINT" property="scenicSpotIntroductionId" />
+    <result column="scenic_spot_id" jdbcType="BIGINT" property="scenicSpotId" />
+    <result column="introduction" jdbcType="VARCHAR" property="introduction" />
+    <result column="optimum_visit_time" jdbcType="VARCHAR" property="optimumVisitTime" />
+    <result column="optimum_visit_time_explain" jdbcType="LONGVARCHAR" property="optimumVisitTimeExplain" />
+    <result column="recommend_play_days" jdbcType="VARCHAR" property="recommendPlayDays" />
+    <result column="recommend_play_days_explain" jdbcType="LONGVARCHAR" property="recommendPlayDaysExplain" />
+    <result column="consumption_level" jdbcType="VARCHAR" property="consumptionLevel" />
+    <result column="consumption_level_explain" jdbcType="LONGVARCHAR" property="consumptionLevelExplain" />
+    <result column="creator_id" jdbcType="BIGINT" property="creatorId" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="modifier_id" jdbcType="BIGINT" property="modifierId" />
+    <result column="modifier_time" jdbcType="TIMESTAMP" property="modifierTime" />
+    <result column="is_delete" jdbcType="INTEGER" property="isDelete" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    scenic_spot_introduction_id, scenic_spot_id, introduction, optimum_visit_time, optimum_visit_time_explain, 
+    recommend_play_days, recommend_play_days_explain, consumption_level, consumption_level_explain, 
+    creator_id, create_time, modifier_id, modifier_time, is_delete
+  </sql>
+</mapper>

@@ -1,0 +1,29 @@
+server:
+  port: 9003
+
+
+spring:
+  application:
+    name: support-server
+  profiles:
+    include: redis
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 47.107.114.69:8848
+
+
+oss:
+  endpoint: oss-cn-hangzhou.aliyuncs.com
+  access-keyId: LTAI4GDqssJNwiy1t77yEGXF
+  accessKeySecret: FecNDuSU88nBeEc7cCtYnFV0WbJDTd
+  bucketName: com-smart-travel
+
+sms:
+  endpoint: dysmsapi.aliyuncs.com
+  accessKeyId: LTAI4GDqssJNwiy1t77yEGXF
+  accessKeySecret: FecNDuSU88nBeEc7cCtYnFV0WbJDTd
+  signName: ZZH商场
+  templateCode: SMS_206552344
+
+

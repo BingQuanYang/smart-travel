@@ -1,0 +1,17 @@
+server:
+  port: 9001
+
+
+
+spring:
+  application:
+    name: travel-server
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 47.107.114.69:8848
+  datasource:
+    druid:
+      url: jdbc:mysql://127.0.0.1:3306/smart-travel?useUnicode=true&characterEncoding=utf8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&transformedBitIsBoolean=true
+      username: root
+      password: root
